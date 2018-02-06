@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace MVPTest
 {
-    class PanelView : Panel
+    public class PanelView : Panel
     {
 
         public PanelView()

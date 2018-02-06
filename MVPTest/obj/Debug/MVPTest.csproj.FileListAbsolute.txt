@@ -7,3 +7,13 @@ C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\TestApplications\MVPTe
 C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\TestApplications\MVPTest\obj\Debug\MVPTest.csproj.GenerateResource.Cache
 C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\TestApplications\MVPTest\obj\Debug\MVPTest.exe
 C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\TestApplications\MVPTest\obj\Debug\MVPTest.pdb
+C:\Users\andh\Source\Repos\TestApplications\MVPTest\bin\Debug\MVPTest.exe.config
+C:\Users\andh\Source\Repos\TestApplications\MVPTest\bin\Debug\MVPTest.exe
+C:\Users\andh\Source\Repos\TestApplications\MVPTest\bin\Debug\MVPTest.pdb
+C:\Users\andh\Source\Repos\TestApplications\MVPTest\obj\Debug\MVPTest.csprojResolveAssemblyReference.cache
+C:\Users\andh\Source\Repos\TestApplications\MVPTest\obj\Debug\MVPTest.Form1.resources
+C:\Users\andh\Source\Repos\TestApplications\MVPTest\obj\Debug\MVPTest.Properties.Resources.resources
+C:\Users\andh\Source\Repos\TestApplications\MVPTest\obj\Debug\MVPTest.csproj.GenerateResource.Cache
+C:\Users\andh\Source\Repos\TestApplications\MVPTest\obj\Debug\MVPTest.csproj.CoreCompileInputs.cache
+C:\Users\andh\Source\Repos\TestApplications\MVPTest\obj\Debug\MVPTest.exe
+C:\Users\andh\Source\Repos\TestApplications\MVPTest\obj\Debug\MVPTest.pdb
