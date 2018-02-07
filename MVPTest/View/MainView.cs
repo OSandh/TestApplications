@@ -11,7 +11,7 @@ namespace MVPTest.View
     {
         private Button GotoAdd { get; set; }
 
-        public event DelegateAddPerson EventGotoAdd = null;
+        public event DelegateGotoAdd EventGotoAdd = null;
 
         public MainView()
             : base()

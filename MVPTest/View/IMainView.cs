@@ -10,6 +10,6 @@ namespace MVPTest.View
 
     interface IMainView
     {
-        event DelegateAddPerson EventGotoAdd;
+        event DelegateGotoAdd EventGotoAdd;
     }
 }

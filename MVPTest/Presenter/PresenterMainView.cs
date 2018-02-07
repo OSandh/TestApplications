@@ -9,6 +9,7 @@ namespace MVPTest.Presenter
 {
     class PresenterMainView
     {
+        
         public IMainView _view { get; set; }
 
         // to handle callbacks to papa Form1
@@ -27,6 +28,7 @@ namespace MVPTest.Presenter
             TestView testPanel = new TestView();
             PresenterTestView presenter = new PresenterTestView(testPanel, window);
             window.ChangePanel(testPanel, (PanelView) _view);
+            
         }
     }
 }

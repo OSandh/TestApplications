@@ -17,6 +17,7 @@ namespace MVPTest
         private Panel currentPanel;
         private PresenterTestView testPresenter;
         private PresenterMainView mainPresenter;
+
         public Form1()
         {
             InitializeComponent();
@@ -29,14 +30,6 @@ namespace MVPTest
         {
             this.Controls.Remove(cameFrom);
             this.Controls.Add(view);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //Ma testPanel = new TestView();
-            //presenter = new PresenterTestView(testPanel);
-            //this.Controls.Remove(currentPanel);
-            //this.Controls.Add(testPanel);
         }
 
     }

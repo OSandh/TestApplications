@@ -15,7 +15,6 @@ namespace MVPTest
             this.Location = new System.Drawing.Point(12, 12);
             this.Size = new System.Drawing.Size(360, 337);
             this.TabIndex = 0;
-
         }
 
 
