@@ -52,8 +52,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presenter\PresenterMainView.cs" />
     <Compile Include="Presenter\PresenterTestView.cs" />
+    <Compile Include="View\IMainView.cs" />
     <Compile Include="View\ITestView.cs" />
+    <Compile Include="View\MainView.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="View\PanelView.cs">
       <SubType>Component</SubType>
     </Compile>

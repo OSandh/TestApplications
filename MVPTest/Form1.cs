@@ -1,4 +1,5 @@
 ﻿using MVPTest.Presenter;
+using MVPTest.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,20 +15,21 @@ namespace MVPTest
     public partial class Form1 : Form
     {
         private Panel currentPanel;
-        private PresenterTestView presenter;
+        private PresenterTestView testPresenter;
+        private PresenterMainView mainPresenter;
+
         public Form1()
         {
             InitializeComponent();
-            currentPanel = panel1;
-            
+            currentPanel = new MainView();
+            mainPresenter = new PresenterMainView((MainView)currentPanel, this);
+            this.Controls.Add(currentPanel);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void ChangePanel(PanelView view, PanelView cameFrom)
         {
-            TestView testPanel = new TestView();
-            presenter = new PresenterTestView(testPanel);
-            this.Controls.Remove(currentPanel);
-            this.Controls.Add(testPanel);
+            this.Controls.Remove(cameFrom);
+            this.Controls.Add(view);
         }
 
     }
