@@ -1,0 +1,10 @@
+C:\Users\Niko Tesla\source\repos\TestApplications\MVPTest\bin\Release\MVPTest.exe.config
+C:\Users\Niko Tesla\source\repos\TestApplications\MVPTest\bin\Release\MVPTest.exe
+C:\Users\Niko Tesla\source\repos\TestApplications\MVPTest\bin\Release\MVPTest.pdb
+C:\Users\Niko Tesla\source\repos\TestApplications\MVPTest\obj\Release\MVPTest.csprojResolveAssemblyReference.cache
+C:\Users\Niko Tesla\source\repos\TestApplications\MVPTest\obj\Release\MVPTest.Form1.resources
+C:\Users\Niko Tesla\source\repos\TestApplications\MVPTest\obj\Release\MVPTest.Properties.Resources.resources
+C:\Users\Niko Tesla\source\repos\TestApplications\MVPTest\obj\Release\MVPTest.csproj.GenerateResource.Cache
+C:\Users\Niko Tesla\source\repos\TestApplications\MVPTest\obj\Release\MVPTest.csproj.CoreCompileInputs.cache
+C:\Users\Niko Tesla\source\repos\TestApplications\MVPTest\obj\Release\MVPTest.exe
+C:\Users\Niko Tesla\source\repos\TestApplications\MVPTest\obj\Release\MVPTest.pdb
