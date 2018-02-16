@@ -1,0 +1,29 @@
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\bin\Release\ToDoList.exe.config
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\bin\Release\ToDoList.exe
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\bin\Release\ToDoList.pdb
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\MainWindow.g.cs
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\App.g.cs
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\ToDoList_MarkupCompile.cache
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\ToDoList_MarkupCompile.lref
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\MainWindow.baml
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\ToDoList.g.resources
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\ToDoList.Properties.Resources.resources
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\ToDoList.csproj.GenerateResource.Cache
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\ToDoList.exe
+C:\Users\Niko Tesla\source\repos\TestingShit\ToDoList\obj\Release\ToDoList.pdb
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\bin\Release\ToDoList.exe.config
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\bin\Release\ToDoList.exe
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\bin\Release\ToDoList.pdb
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\App.g.cs
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoList_MarkupCompile.cache
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoList_MarkupCompile.lref
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoList.g.resources
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoList.Properties.Resources.resources
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoList.csproj.GenerateResource.Cache
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoList.exe
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoList.pdb
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoWindow.g.cs
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoWindow.baml
+C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Release\ToDoList.csprojResolveAssemblyReference.cache
