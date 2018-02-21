@@ -149,6 +149,8 @@ namespace ToDoList
             gradient.Add(bot);
             brush.GradientStops = gradient;
             newTodoBox.Fill = brush;
+
+            Save();
         }
 
         public void Save()
