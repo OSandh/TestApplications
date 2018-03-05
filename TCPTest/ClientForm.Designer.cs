@@ -91,7 +91,7 @@
             this.trackBar1.Size = new System.Drawing.Size(104, 45);
             this.trackBar1.TabIndex = 3;
             this.trackBar1.Value = 5;
-            this.trackBar1.ValueChanged += TrackBar1_ValueChanged;
+            this.trackBar1.ValueChanged += new System.EventHandler(TrackBar1_ValueChanged);
             // 
             // labelPoints
             // 
