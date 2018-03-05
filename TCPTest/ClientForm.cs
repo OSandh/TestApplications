@@ -74,7 +74,7 @@ namespace TCPTest
                     // knappen är tryckt
                     if (message.StartsWith("Points "))
                     {
-                        sw.WriteLine(str);
+                        sw.WriteLine(message);
                         buttonSend.Enabled = false;
                         
                     }
