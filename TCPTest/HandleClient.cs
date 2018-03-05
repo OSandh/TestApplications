@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 namespace TCPTest
 {
     public delegate void InvokeListBox();
+    public delegate void InvokeSendButton();
 
     public class HandleClient
     {
@@ -54,6 +55,7 @@ namespace TCPTest
 
                 while (true)
                 {
+
                     msg = StreamReader.ReadLine();
 
                     if (msg == null || msg.StartsWith("quit"))
@@ -96,5 +98,6 @@ namespace TCPTest
                 () => { lock (form.ListBox) { form.AddToPointList(client, point); }  }
                 ));
         }
+        
     }
 }

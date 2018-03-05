@@ -55,6 +55,7 @@ namespace TCPTest
             buttonStopServer.Enabled = true;
             buttonClient.Enabled = false;
             buttonServer.Enabled = false;
+            buttonRequest.Enabled = true;
         }
 
         private void buttonClient_Click(object sender, EventArgs e)
@@ -66,6 +67,11 @@ namespace TCPTest
         private void buttonStopServer_Click(object sender, EventArgs e)
         {
             server.KillThreads();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            server.RequestPoints();
         }
     }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSend = new System.Windows.Forms.Button();
             this.comboBoxPoint = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
@@ -36,15 +36,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonSend
             // 
-            this.button1.Location = new System.Drawing.Point(67, 161);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Send";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonSend.Location = new System.Drawing.Point(67, 161);
+            this.buttonSend.Name = "buttonSend";
+            this.buttonSend.Size = new System.Drawing.Size(75, 23);
+            this.buttonSend.TabIndex = 0;
+            this.buttonSend.Text = "Send";
+            this.buttonSend.UseVisualStyleBackColor = true;
+            this.buttonSend.Click += new System.EventHandler(this.Button1_Click);
             // 
             // comboBoxPoint
             // 
@@ -112,7 +112,7 @@
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBoxPoint);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonSend);
             this.Name = "ClientForm";
             this.Text = "ClientForm";
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
@@ -121,10 +121,9 @@
 
         }
 
-
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSend;
         private System.Windows.Forms.ComboBox comboBoxPoint;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TrackBar trackBar1;

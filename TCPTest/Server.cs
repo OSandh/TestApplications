@@ -84,6 +84,15 @@ namespace TCPTest
             }
         }
 
+        internal void RequestPoints()
+        {
+            foreach(var client in clientList)
+            {
+                client.StreamWriter.WriteLine("give");
+                client.StreamWriter.Flush();
+            }
+        }
+
         public void TieToForm(Form1 form)
         {
             this.form = form;

@@ -36,11 +36,12 @@
             this.columnJudge = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnPoints = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonStopServer = new System.Windows.Forms.Button();
+            this.buttonRequest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonServer
             // 
-            this.buttonServer.Location = new System.Drawing.Point(193, 80);
+            this.buttonServer.Location = new System.Drawing.Point(84, 72);
             this.buttonServer.Name = "buttonServer";
             this.buttonServer.Size = new System.Drawing.Size(75, 23);
             this.buttonServer.TabIndex = 0;
@@ -50,7 +51,7 @@
             // 
             // buttonClient
             // 
-            this.buttonClient.Location = new System.Drawing.Point(193, 138);
+            this.buttonClient.Location = new System.Drawing.Point(84, 130);
             this.buttonClient.Name = "buttonClient";
             this.buttonClient.Size = new System.Drawing.Size(75, 23);
             this.buttonClient.TabIndex = 1;
@@ -98,7 +99,7 @@
             // buttonStopServer
             // 
             this.buttonStopServer.Enabled = false;
-            this.buttonStopServer.Location = new System.Drawing.Point(193, 109);
+            this.buttonStopServer.Location = new System.Drawing.Point(84, 101);
             this.buttonStopServer.Name = "buttonStopServer";
             this.buttonStopServer.Size = new System.Drawing.Size(75, 23);
             this.buttonStopServer.TabIndex = 5;
@@ -106,11 +107,23 @@
             this.buttonStopServer.UseVisualStyleBackColor = true;
             this.buttonStopServer.Click += new System.EventHandler(this.buttonStopServer_Click);
             // 
+            // buttonRequest
+            // 
+            this.buttonRequest.Enabled = false;
+            this.buttonRequest.Location = new System.Drawing.Point(165, 72);
+            this.buttonRequest.Name = "buttonRequest";
+            this.buttonRequest.Size = new System.Drawing.Size(75, 23);
+            this.buttonRequest.TabIndex = 6;
+            this.buttonRequest.Text = "Request";
+            this.buttonRequest.UseVisualStyleBackColor = true;
+            this.buttonRequest.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 296);
+            this.Controls.Add(this.buttonRequest);
             this.Controls.Add(this.buttonStopServer);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.listBox1);
@@ -134,6 +147,7 @@
         private System.Windows.Forms.ColumnHeader columnJudge;
         private System.Windows.Forms.ColumnHeader columnPoints;
         private System.Windows.Forms.Button buttonStopServer;
+        private System.Windows.Forms.Button buttonRequest;
     }
 }
 

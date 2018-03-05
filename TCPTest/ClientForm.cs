@@ -63,18 +63,21 @@ namespace TCPTest
                 StreamReader sr = new StreamReader(client.GetStream());
                 StreamWriter sw = new StreamWriter(client.GetStream());
 
-                String str = "";
+                String str = sr.ReadLine();
 
                 while (!str.StartsWith("quit"))
                 {
-                    str = message;
+                    // server har skickat ut att den vill ha något
+                    if (str.StartsWith("give"))
+                        buttonSend.Enabled = true;
 
-                    if (str.StartsWith("Points "))
+                    // knappen är tryckt
+                    if (message.StartsWith("Points "))
                     {
                         sw.WriteLine(str);
-                        button1.Enabled = false;
+                        buttonSend.Enabled = false;
+                        
                     }
-
                     message = "";
                     sw.Flush();
                 }
@@ -89,7 +92,7 @@ namespace TCPTest
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             message = "Points " + points;
         }
