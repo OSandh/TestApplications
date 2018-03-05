@@ -1,0 +1,11 @@
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\bin\Debug\TCPTest.exe.config
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\bin\Debug\TCPTest.exe
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\bin\Debug\TCPTest.pdb
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.csprojResolveAssemblyReference.cache
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.ClientForm.resources
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.Form1.resources
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.Properties.Resources.resources
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.csproj.GenerateResource.Cache
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.csproj.CoreCompileInputs.cache
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.exe
+C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.pdb

@@ -17,6 +17,8 @@ namespace TCPTest
 
         public Label Label1 { get { return label1; } set { label1 = value; } }
         public ListBox ListBox { get { return listBox1; } set { listBox1 = value; } }
+
+        
         public Form1()
         {
             InitializeComponent();
@@ -27,23 +29,43 @@ namespace TCPTest
             this.label1.Text = text;
         }
 
-        public void AddToPointList(string text)
+        public void AddToPointList(string client, string text)
         {
-            this.listBox1.Items.Add(text);
+            foreach(ListViewItem clientItem in listView1.Items)
+            {
+                if(clientItem.Text == client)
+                {
+                    clientItem.SubItems[1].Text = text;
+                }
+            }
+        }
+
+        public void AddToClientList(HandleClient client)
+        {
+            ListViewItem clientItem = new ListViewItem(client.ClientName);
+            clientItem.SubItems.Add(client.Points.ToString());
+
+            listView1.Items.Add(clientItem);
         }
 
         private void buttonServer_Click(object sender, EventArgs e)
         {
             server = new Server();
             server.TieToForm(this);
-            buttonClient.IsAccessible = false;
-            buttonServer.IsAccessible = false;
+            buttonStopServer.Enabled = true;
+            buttonClient.Enabled = false;
+            buttonServer.Enabled = false;
         }
 
         private void buttonClient_Click(object sender, EventArgs e)
         {
             ClientForm clientForm = new ClientForm();
             clientForm.Show();
+        }
+
+        private void buttonStopServer_Click(object sender, EventArgs e)
+        {
+            server.KillThreads();
         }
     }
 }

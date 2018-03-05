@@ -10,12 +10,11 @@ using System.Threading.Tasks;
 
 namespace TCPTest
 {
-
-    
     public delegate void InvokeListBox();
 
-    class HandleClient
+    public class HandleClient
     {
+        public string ClientName { get; set; }
         public int IdClient { get; set; } = 0;
         public IPEndPoint EndPoint { get; set; } = null;
         public NetworkStream NetworkStream { get; set; } = null;
@@ -25,16 +24,19 @@ namespace TCPTest
         public Thread ThreadClient { get; set; } = null;
         public Server Server { get; set; } = null;
 
+        public double Points { get; set; } = -1;
+
         private Form1 form;
 
-        public HandleClient(Server server, TcpClient client, Form1 form)
+        public HandleClient(Server server, TcpClient client, int id, Form1 form)
         {
             this.form = form;
             this.Server = server;
             this.Client = client;
+            ClientName = "Client " + id;
 
             ThreadClient = new Thread(ClientThread);
-            ThreadClient.Name = "Client " + ++IdClient;
+            ThreadClient.Name = ClientName;
             ThreadClient.Start();
 
         }
@@ -58,9 +60,10 @@ namespace TCPTest
                     {
                         break;
                     }
-                    else
+                    else if(msg.StartsWith("Points "))
                     {
-                        AddPointToList(msg);
+                        Points = Convert.ToDouble(msg.Substring(7));
+                        AddPointToList(ClientName, Points.ToString());
                     }
                 }
 
@@ -87,10 +90,10 @@ namespace TCPTest
             
         }
 
-        public void AddPointToList(string text)
+        public void AddPointToList(string client, string point)
         {
             form.Invoke(new InvokeListBox(
-                () => { lock (form.ListBox) { form.AddToPointList(text); }  }
+                () => { lock (form.ListBox) { form.AddToPointList(client, point); }  }
                 ));
         }
     }

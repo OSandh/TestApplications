@@ -32,11 +32,15 @@
             this.buttonClient = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnJudge = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnPoints = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buttonStopServer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonServer
             // 
-            this.buttonServer.Location = new System.Drawing.Point(193, 97);
+            this.buttonServer.Location = new System.Drawing.Point(193, 80);
             this.buttonServer.Name = "buttonServer";
             this.buttonServer.Size = new System.Drawing.Size(75, 23);
             this.buttonServer.TabIndex = 0;
@@ -46,7 +50,7 @@
             // 
             // buttonClient
             // 
-            this.buttonClient.Location = new System.Drawing.Point(193, 126);
+            this.buttonClient.Location = new System.Drawing.Point(193, 138);
             this.buttonClient.Name = "buttonClient";
             this.buttonClient.Size = new System.Drawing.Size(75, 23);
             this.buttonClient.TabIndex = 1;
@@ -66,16 +70,49 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(312, 156);
+            this.listBox1.Location = new System.Drawing.Point(312, 172);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 3;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnJudge,
+            this.columnPoints});
+            this.listView1.Location = new System.Drawing.Point(312, 52);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(121, 97);
+            this.listView1.TabIndex = 4;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnJudge
+            // 
+            this.columnJudge.Text = "Judge";
+            // 
+            // columnPoints
+            // 
+            this.columnPoints.Text = "Points";
+            // 
+            // buttonStopServer
+            // 
+            this.buttonStopServer.Enabled = false;
+            this.buttonStopServer.Location = new System.Drawing.Point(193, 109);
+            this.buttonStopServer.Name = "buttonStopServer";
+            this.buttonStopServer.Size = new System.Drawing.Size(75, 23);
+            this.buttonStopServer.TabIndex = 5;
+            this.buttonStopServer.Text = "Stop server";
+            this.buttonStopServer.UseVisualStyleBackColor = true;
+            this.buttonStopServer.Click += new System.EventHandler(this.buttonStopServer_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 296);
+            this.Controls.Add(this.buttonStopServer);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonClient);
@@ -93,6 +130,10 @@
         private System.Windows.Forms.Button buttonClient;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnJudge;
+        private System.Windows.Forms.ColumnHeader columnPoints;
+        private System.Windows.Forms.Button buttonStopServer;
     }
 }
 

@@ -31,11 +31,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboBoxPoint = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.labelPoints = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(67, 138);
+            this.button1.Location = new System.Drawing.Point(67, 161);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -68,37 +71,63 @@
             "9",
             "9,5",
             "10"});
-            this.comboBoxPoint.Location = new System.Drawing.Point(67, 67);
+            this.comboBoxPoint.Location = new System.Drawing.Point(67, 44);
             this.comboBoxPoint.Name = "comboBoxPoint";
             this.comboBoxPoint.Size = new System.Drawing.Size(121, 21);
             this.comboBoxPoint.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(67, 112);
+            this.textBox1.Location = new System.Drawing.Point(67, 71);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 2;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(67, 97);
+            this.trackBar1.Maximum = 20;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.TabIndex = 3;
+            this.trackBar1.Value = 5;
+            this.trackBar1.ValueChanged += TrackBar1_ValueChanged;
+            // 
+            // labelPoints
+            // 
+            this.labelPoints.AutoSize = true;
+            this.labelPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.labelPoints.Location = new System.Drawing.Point(64, 125);
+            this.labelPoints.Name = "labelPoints";
+            this.labelPoints.Size = new System.Drawing.Size(16, 17);
+            this.labelPoints.TabIndex = 4;
+            this.labelPoints.Text = "0";
             // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.labelPoints);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBoxPoint);
             this.Controls.Add(this.button1);
             this.Name = "ClientForm";
             this.Text = "ClientForm";
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
+
 
         #endregion
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBoxPoint;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label labelPoints;
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -16,11 +17,14 @@ namespace TCPTest
     public partial class ClientForm : Form
     {
         private Thread threadClient = null;
-        private double point = -1;
+        private double points = -1;
+        private string message = "";
+
         public ClientForm()
         {
             InitializeComponent();
-
+            trackBar1.Value = 10;
+            
             threadClient = new Thread(RunClient);
             threadClient.Start();
         }
@@ -32,8 +36,29 @@ namespace TCPTest
             
             try
             {
+                // get ip from public serverlist
+                //FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://files.000webhost.com/simhoppServers.txt");
+                //request.Method = WebRequestMethods.Ftp.UploadFile;
+                WebClient request = new WebClient();
+                string url = "ftp://files.000webhost.com/simhoppServers.txt";
+
+                // Get network credentials.
+                request.Credentials = new NetworkCredential("oskarsandh", "simmalungt1");
+
+                string ip = "";
+
+                try
+                {
+                    byte[] bytes = request.DownloadData(url);
+                    ip = System.Text.Encoding.UTF8.GetString(bytes);
+                }
+                catch
+                {
+                    // do something
+                }
+
                 Int32 port = 27015;
-                client = new TcpClient("127.0.0.1", port);
+                client = new TcpClient(ip, port);
 
                 StreamReader sr = new StreamReader(client.GetStream());
                 StreamWriter sw = new StreamWriter(client.GetStream());
@@ -42,14 +67,15 @@ namespace TCPTest
 
                 while (!str.StartsWith("quit"))
                 {
-                    str = point.ToString();
+                    str = message;
 
-                    if (!str.Equals("-1"))
+                    if (str.StartsWith("Points "))
                     {
-                        sw.WriteLine(point);
+                        sw.WriteLine(str);
+                        button1.Enabled = false;
                     }
 
-                    point = -1;
+                    message = "";
                     sw.Flush();
                 }
             }
@@ -65,7 +91,13 @@ namespace TCPTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            point = Convert.ToDouble(comboBoxPoint.SelectedItem);
+            message = "Points " + points;
+        }
+
+        private void TrackBar1_ValueChanged(object sender, EventArgs e)
+        {
+            points = (double)trackBar1.Value / 2;
+            labelPoints.Text = points.ToString();
         }
     }
 }

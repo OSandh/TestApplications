@@ -28,3 +28,18 @@ C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Debug\ToD
 C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Debug\ToDoList.csproj.CoreCompileInputs.cache
 C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Debug\ToDoWindow.g.cs
 C:\Users\Niko Tesla\Documents\Visual Studio 2015\Projects\ToDoList\obj\Debug\ToDoWindow.baml
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\bin\Debug\ToDoList.exe.config
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\bin\Debug\ToDoList.exe
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\bin\Debug\ToDoList.pdb
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoList.csprojResolveAssemblyReference.cache
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoWindow.g.cs
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\App.g.cs
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoList_MarkupCompile.cache
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoList_MarkupCompile.lref
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoWindow.baml
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoList.g.resources
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoList.Properties.Resources.resources
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoList.csproj.GenerateResource.Cache
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoList.exe
+C:\Users\Niko Tesla\source\repos\TestApplications\ToDoList\obj\Debug\ToDoList.pdb
