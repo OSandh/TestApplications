@@ -28,6 +28,8 @@ namespace TCPTest
 
         public double Points { get; set; } = -1;
 
+        public bool AcceptPoints { get; set; }
+
         private Form1 form;
 
         public HandleClient(Server server, TcpClient client, int id, Form1 form)
@@ -38,6 +40,7 @@ namespace TCPTest
             ClientName = "Client " + id;
 
             ThreadClient = new Thread(ClientThread);
+            ThreadClient.IsBackground = true;
             ThreadClient.Name = ClientName;
             ThreadClient.Start();
 
@@ -56,6 +59,8 @@ namespace TCPTest
 
                 while (true)
                 {
+                    if (AcceptPoints)
+                        StreamWriter.WriteLine("open");
 
                     msg = StreamReader.ReadLine();
 
@@ -67,7 +72,10 @@ namespace TCPTest
                     {
                         Points = Convert.ToDouble(msg.Substring(7));
                         AddPointToList(ClientName, Points.ToString());
+
                     }
+
+                    StreamWriter.Flush();
                 }
 
             }

@@ -9,3 +9,14 @@ C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.cspr
 C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.csproj.CoreCompileInputs.cache
 C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.exe
 C:\Users\Niko Tesla\source\repos\TestApplications\TCPTest\obj\Debug\TCPTest.pdb
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\bin\Debug\TCPTest.exe.config
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\bin\Debug\TCPTest.exe
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\bin\Debug\TCPTest.pdb
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\obj\Debug\TCPTest.csprojResolveAssemblyReference.cache
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\obj\Debug\TCPTest.ClientForm.resources
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\obj\Debug\TCPTest.Form1.resources
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\obj\Debug\TCPTest.Properties.Resources.resources
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\obj\Debug\TCPTest.csproj.GenerateResource.Cache
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\obj\Debug\TCPTest.csproj.CoreCompileInputs.cache
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\obj\Debug\TCPTest.exe
+C:\Users\andh\Documents\VS Projects\TestApplications\TCPTest\obj\Debug\TCPTest.pdb

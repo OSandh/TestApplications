@@ -14,6 +14,8 @@ using System.Windows.Forms;
 
 namespace TCPTest
 {
+    public delegate void InvokeButtonSend();
+
     public partial class ClientForm : Form
     {
         private Thread threadClient = null;
@@ -26,6 +28,7 @@ namespace TCPTest
             trackBar1.Value = 10;
             
             threadClient = new Thread(RunClient);
+           // threadClient.IsBackground = false;
             threadClient.Start();
         }
         
@@ -63,21 +66,26 @@ namespace TCPTest
                 StreamReader sr = new StreamReader(client.GetStream());
                 StreamWriter sw = new StreamWriter(client.GetStream());
 
-                String str = sr.ReadLine();
+                String str = "";
 
                 while (!str.StartsWith("quit"))
                 {
+                    str = sr.ReadLine();
+
                     // server har skickat ut att den vill ha något
                     if (str.StartsWith("give"))
-                        buttonSend.Enabled = true;
-
-                    // knappen är tryckt
-                    if (message.StartsWith("Points "))
                     {
-                        sw.WriteLine(message);
-                        buttonSend.Enabled = false;
-                        
+                        sw.WriteLine(" ");
+                        ToggleButtonSend();
                     }
+                    // knappen är tryckt
+                    else if (str.StartsWith("open") && sendPoints)
+                    {
+                        ToggleButtonSend();
+                        sw.WriteLine(message);
+                        sendPoints = false;
+                    }
+
                     message = "";
                     sw.Flush();
                 }
@@ -92,11 +100,21 @@ namespace TCPTest
             }
         }
 
+        private void ToggleButtonSend()
+        {
+            this.Invoke(new InvokeButtonSend(
+                () => { this.buttonSend.Enabled = !(this.buttonSend.Enabled); }
+                ));
+        }
+
+        bool sendPoints = false;
         private void Button1_Click(object sender, EventArgs e)
         {
             message = "Points " + points;
+            sendPoints = true;
         }
 
+        
         private void TrackBar1_ValueChanged(object sender, EventArgs e)
         {
             points = (double)trackBar1.Value / 2;

@@ -37,7 +37,7 @@ namespace TCPTest
         
         public Server()
         {
-            // get your ip
+            // Hämta ditt ip
             IPHostEntry host;
             host = Dns.GetHostEntry(Dns.GetHostName());
             foreach (IPAddress ip in host.AddressList)
@@ -53,17 +53,13 @@ namespace TCPTest
             // kallar Instance()
             tcpServer = this;
             threadServer = new Thread(tcpServer.ThreadListener);
+            //threadServer.IsBackground = true;
             threadServer.Start();
         }
 
         private void UploadServerList()
         {
-            //using (WebClient client = new WebClient())
-            //{
-            //    client.Credentials = new NetworkCredential("2644509", "simhopp123");
-            //    client.UploadFile("ftp://simhopp.atwebpages.com / home/www/simhoppServers.txt", "STOR", localFilePath);
-            //}
-
+            
             // Get the object used to communicate with the server.
             FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://files.000webhost.com/simhoppServers.txt");
             request.Method = WebRequestMethods.Ftp.UploadFile;
@@ -73,7 +69,6 @@ namespace TCPTest
 
             // Write the text's bytes into the request stream.
             string text = localAddress.ToString();
-
             request.ContentLength = text.Length;
 
             using (Stream request_stream = request.GetRequestStream())
@@ -88,6 +83,7 @@ namespace TCPTest
         {
             foreach(var client in clientList)
             {
+                client.AcceptPoints = true;
                 client.StreamWriter.WriteLine("give");
                 client.StreamWriter.Flush();
             }
@@ -98,7 +94,7 @@ namespace TCPTest
             this.form = form;
         }
 
-
+        // lyssnar efter clienter
         private void ThreadListener()
         {
             try
@@ -113,8 +109,6 @@ namespace TCPTest
                     TcpClient client = tcpListener.AcceptTcpClient();
 
                     UpdateJudgeListView(new HandleClient(this, client, (clientList.Count + 1), form));
-                    
-                    UpdateLabel("Connected!");
                 }
 
             }catch(SocketException e)
